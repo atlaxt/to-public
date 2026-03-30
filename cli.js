@@ -4,7 +4,7 @@
 const fs = require('node:fs')
 const path = require('node:path')
 
-const PREBUILD_CMD = 'npx @atlaxt/to-public'
+const PREBUILD_CMD = 'to-public'
 const pkgPath = path.resolve(process.cwd(), 'package.json')
 
 if (!fs.existsSync(pkgPath)) {

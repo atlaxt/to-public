@@ -19,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/atlaxt/to-public/issues"
   },
+  "main": "./cli.js",
   "bin": {
     "to-public": "./cli.js"
   },
@@ -28,8 +29,5 @@
   ],
   "engines": {
     "node": ">=14"
-  },
-  "scripts": {
-    "prebuild": "npx @atlaxt/to-public"
   }
 }
