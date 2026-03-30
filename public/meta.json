@@ -11,20 +11,20 @@
   ],
   "author": "Atlas Yigit Aydin",
   "license": "MIT",
-  "homepage": "https://atlaxt.me/cli/tools/publicmeta",
+  "homepage": "https://atlaxt.me/cli/tools/to-public",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atlaxt/publicmeta.git"
+    "url": "https://github.com/atlaxt/to-public.git"
   },
   "bugs": {
-    "url": "https://github.com/atlaxt/publicmeta/issues"
+    "url": "https://github.com/atlaxt/to-public/issues"
   },
   "bin": {
-    "atlaxt-publicmeta": "./cli.js"
+    "atlaxt-to-public": "./cli.js"
   },
   "files": [
     "cli.js",
-    "publicmeta.cjs"
+    "to-public.cjs"
   ],
   "engines": {
     "node": ">=14"

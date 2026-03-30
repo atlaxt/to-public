@@ -15,7 +15,7 @@ That's it. This command:
 
 ## Configuration
 
-Open the generated `publicmeta.cjs` and edit the `CONFIG` block at the top:
+Open the generated `to-public.cjs` and edit the `CONFIG` block at the top:
 
 ```js
 const CONFIG = {

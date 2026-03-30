@@ -74,7 +74,7 @@ function ansi(code, str) {
   return isTTY ? `\x1B[${code}m${str}\x1B[0m` : str
 }
 
-const TAG = ansi('1', '[publicmeta]')
+const TAG = ansi('1', '[to-public]')
 
 /**
  * Writes a formatted log line to stdout or stderr.
