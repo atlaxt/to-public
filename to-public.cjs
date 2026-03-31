@@ -160,6 +160,8 @@ function buildPayload(pkg) {
     delete payload[field]
   }
 
+  payload.buildDate = new Date().toISOString()
+
   return payload
 }
 

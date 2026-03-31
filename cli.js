@@ -14,6 +14,14 @@ if (!fs.existsSync(pkgPath)) {
 
 const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'))
 
+const ownVersion = require('./package.json').version
+if (!pkg.devDependencies) pkg.devDependencies = {}
+if (!pkg.devDependencies['@atlaxt/to-public']) {
+  pkg.devDependencies['@atlaxt/to-public'] = `^${ownVersion}`
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n', 'utf8')
+  process.stdout.write(`[to-public] Added @atlaxt/to-public@^${ownVersion} to devDependencies.\n`)
+}
+
 if (!pkg.scripts) pkg.scripts = {}
 
 if (pkg.scripts.prebuild && pkg.scripts.prebuild !== PREBUILD_CMD) {
